@@ -1,0 +1,276 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    transition: 0.7s;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: transparent;
+}
+nav .logo {
+    width: 160px;
+}
+nav ul li {
+    display: inline;
+    padding: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: aliceblue;
+    
+}
+nav ul li a:hover{
+    color: brown;
+}
+.home {
+    width: 100%;
+    height: 100vh ;
+    background-image:linear-gradient(rgba(4,9,30, 0.7),rgba(4,9,30, 0.7)), url(../img/banner.png);
+    background-position: center;
+    background-size: cover;
+
+}
+.home h1,p {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 25%;
+}
+.home h1 {
+    color: aliceblue;
+    font-weight:bold;
+    font-size: 60px;
+    margin: 10px;
+    text-transform: capitalize;
+}
+.home p{
+    text-align: center;
+    text-transform: capitalize;
+    color: aliceblue;
+    width: 50%;
+    padding-left: 25%;
+}
+.home .btn-home {
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    border: 3px solid white;
+    border-radius: 8px;
+    background-color: transparent;
+    color: aliceblue;
+    /*transition: 0.7s;*/
+    position: relative;
+    left: 40%;
+    top : 30%
+    
+}
+.home .btn-home:hover{
+    background-color: brown;
+    border-color: brown;
+    cursor: pointer;
+}
+.cours h1 {
+    font-size: 35px;
+    padding-top: 100px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size: 14px;
+    padding: 10px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.row {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    
+}
+.cours-colm{
+    text-align: center;
+    align-items:baseline;
+    margin-bottom: 5%;
+    flex-basis: 31%;
+    background-color: #ffe6e6;
+    border-radius: 15px;
+    padding: 60px 12px;
+    margin: 5% 40px;
+    box-sizing: border-box;
+    
+}
+h3 {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0px;
+    font-size: 24px;
+}
+.cours-colm:hover{
+    box-shadow: 0 0 30px 0px rgba(0,0,0, 0.5);
+    cursor: pointer;
+}
+@media (max-width : 700px) {
+    .row {
+        flex-direction: column;
+    }
+    
+}
+.campus{
+    width: 80%;
+    
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+}
+.campus h1 {
+    font-size: 40px;
+}
+.campus-col {
+    
+    flex-basis: 32%;
+    border-radius: 20px;
+    margin-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img {
+    width: 100%;
+}
+.layer{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    
+}
+.layer:hover{
+    background: rgba(226,0,0, 0.7);
+    cursor: pointer;
+}
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    position: absolute;
+    bottom: 0%;
+    opacity: 1;
+    
+}
+.layer:hover h3{
+    bottom: 50%;
+    opacity: 1;
+}
+.facilities {
+    padding-top: 20%;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+
+}
+.facilities-col{
+    flex-basis: 31%;
+    text-align: left;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.facilities-col span {
+    padding-bottom: 15%;
+    font-size: 14px;
+    
+    font-weight: 400;
+    line-height: 22px;
+    
+}
+.facilities-col h3 {
+
+    margin: 16px 0px;
+    text-align: left;
+}
+.facilities h1 {
+    font-size: 40px;
+}
+.testimonal {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+
+}
+.testimonal h1 {
+    font-size: 40px;
+}
+.testimonal-col {
+    flex-basis: 44%;
+    border-radius: 15px;
+    margin-bottom: 5%;
+    text-align: left;
+    background-color: #ffe6e6;
+    cursor: pointer;
+    padding: 25px;
+    display: flex;
+}
+.testimonal-col img {
+    height: 40px;
+    margin-left: 5px ;
+    margin-right: 30px ;
+    border-radius: 50%;
+}
+.testimonal-col span{
+    padding: 15px;
+    text-align: center;
+}
+@media (max-width: 700px){
+    .testimonal-col img {
+        
+        margin-left: 0px ;
+        margin-right: 30px ;
+        
+    }
+}
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    background-image:linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0, 0.7)), url(../img/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 100px 0;
+    text-align: center;
+    color: antiquewhite;
+}
+.cta h1 {
+    margin: 30px;
+    font-size: 45px;
+}
+.cta a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 20%;
+    font-weight: bold;
+    font-size: 20px;
+}
+.cta .hero-btn{
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 15px;
+}
+.cta .hero-btn:hover{
+    background-color: aqua;
+    border: 2px solid aqua;
+    box-sizing: border-box;
+}
+
+
+
